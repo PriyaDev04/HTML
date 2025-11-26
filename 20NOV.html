@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Table -->
+    <!-- <table border="1"> -->
+    <!-- <table border="1" width="50%"> -->
+    <!-- <table border="2" width="50%" cellspacing="20">  -->
+    <!-- <table border="2" width="50%" cellspacing="20" cellpadding="20"> -->
+    <table border="2" width="100%" cellspacing="20" cellpadding="0" align="center">
+        <Caption>My Table</Caption>
+        <thead>
+            <tr>
+                <!-- th{table data}*4 -->
+                <th>Home </th>
+                <th>About Us</th>
+                <th>Contact Us</th>
+                <th>Services</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>table</td>
+                <td>table</td>
+                <td>table</td>
+            </tr>
+
+            <!-- this only get one row with four datas -->
+            <!-- tr>td{Data $}*4 -->
+            <!-- this will get 4 rows with datas-->
+            <!-- (tr>td{Data $}*4)*6 -->
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+            <tr>
+                <!-- rowspan for mergin row -->
+                <td rowspan="3"> Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+            <tr>
+                <!-- since above row merged using rowpan the below is removed -->
+                <!-- <td>Data 1</td> -->
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+            <!-- If I want merge then use colspan and remove the other td data -->
+            <tr>
+                <!-- TRied merging here -->
+                <!-- <td colspan="4">Data 1</td> -->
+
+                <!-- if u need the above in center then use th -->
+                <th colspan="4">Data 1</th>
+
+
+
+                <!-- removed the below -->
+                <!-- <td>Data 2</td>
+            <td>Data 3</td>
+            <td>Data 4</td> -->
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <form action="">
+        <!-- all websites used get in default -->
+        <!-- <form action="" method="get"> -->
+        <!-- Koi info save karne keliye post method will use -->
+        <!-- <form action="" method="post"> -->
+        <label for="fname">Enter your name:</label>
+        <input type="text" name="fname" id="fname">
+
+        <!-- same work like button -->
+        <input type="submit" value="Submit form">Submit</submit>
+
+        <!-- same work like button -->
+        <input type="reset" value="Clear form">Reset</submit>
+
+        <!-- <button type="submit">Submit</button> -->
+
+    </form>
+
+
+    <!-- SINCE IF WE USE FORM while using html alignment wont be good , so we use table -->
+
+    <table border="1" width="40%" align="center">
+        <tr>
+            <td>
+                <label for="fname">Enter your name:</label>
+                <input type="text" name="fname" id="fname">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="fatername">Enter your Fathers name:</label>
+                <input type="text" name="fatername" id="fatername">
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+</body>
+
+</html>
