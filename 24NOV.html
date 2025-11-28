@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- autocomplete off is goof feature like IRCTC -->
+    <form action="" method="get" autocomplete="off">
+        <!-- Name -->
+        <label for="fname">Enter your name:</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your Name" minlength="2" maxlength="30"
+            pattern="[A-Za-z]{2,30}" title="only alphabets are allowed" value="Priya">
+        <br>
+        <!-- Passwrd -->
+        <label for="password">Enter password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter your Password" minlength="2"
+            maxlength="30">
+        <br>
+        <!-- Email -->
+        <label for="email">Enter Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <br>
+        <!-- Telephone -->
+        <br>
+        <label for="tel">Enter Mobile:</label>
+        <input type="tel" name="tel" id="tel" placeholder="Enter your Mobile Number" maxlength="10">
+
+        <br>
+        <!-- Skills -->
+        <label for="tel">Select Skills</label>
+        C<input type="checkbox" name="skills" id="skills">
+        C++<input type="checkbox" name="skills" id="skills">
+        Java<input type="checkbox" name="skills" id="skills">
+        <br>
+        <!-- Gender -->
+        <label for="gender">Select Gender</label>
+        Male<input type="radio" name="gender" id="gender">
+        Female<input type="radio" name="gender" id="gender">
+        Others<input type="radio" name="gender" id="gender">
+        <br>
+        <!-- Address -->
+        <label for="address">Address</label>
+        <textarea>Enter address</textarea>
+        <br>
+
+        <!-- Options -->
+        <select name="" id="">
+            <option value="Apple">Apple</option>
+            <!-- Optgroup gives inside again other oprions with some indentation-->
+
+            <optgroup value="fruits" label="fruits">
+                <option value="Orange">Orange</option>
+                <option value="Grapes">Grapes</option>
+            </optgroup>
+            <option value="Pine Apple">Pine Apple</option>
+        </select>
+
+        <br>
+        <!-- Datalist will search in sorting order-->
+        Fruits:<input type="text" list="frut">
+        <datalist id="frut">
+            <option value="Orange">Orange</option>
+            <option value="Grapes">Grapes</option>
+            <option value="apple">apple</option>
+            <option value="mango">mango</option>
+            <option value="cucumber">cucumber</option>
+            <option value="Carrot">Carrot</option>
+
+        </datalist>
+        <br>
+
+        <input type="file" name="" id="" accept=".pdf,.jpg,.jpeg">
+
+        <br>
+
+        <input type="datetime-local" name="" id="">
+        <br>
+
+        <input type="date" name="" id="">
+        <br>
+
+        <input type="url" name="" id="">
+        <br>
+
+        <input type="week" name="" id="">
+        <br>
+
+        <input type="color" name="" id="">
+        <br>
+
+        <input type="image" src="" alt="">
+        <br>
+
+        <input type="range" name="" id="">
+        <br>
+
+        <input type="url" name="" id="">
+        <br>
+
+        <input type="search" name="" id="">
+        <br>
+
+        <!-- Button -->
+        <Button type="submit">Submit</Button>
+        <Button type="reset">Reset</Button>
+
+
+
+
+
+
+
+
+    </form>
+
+    <!-- Audio -->
+    <audio src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" controls>
+        Your browser does not support the audio element.
+    </audio>
+
+
+</body>
+
+</html>
